@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+   
+}
+body{
+    background-color: black;
+}
+html{
+    font-size: 10px;
+    color: white;
+}
+header{
+    padding: 0px 0 30px 13%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30vw;
+    position: fixed;
+    height: 100vh;
+}
+.nav-links a{
+    width: fit-content;
+    padding: 8px 25px 8px 8px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+   align-items: end;
+
+}
+.nav-links{
+    padding-top: 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2.5rem; */
+    height: 70%;
+    justify-content: space-between;
+    /* max-width: 300px; */
+}
+.nav-links i{
+    padding-right: 3rem;
+    font-size: 2.5rem;
+}
+.nav-links a:hover{
+background-color:rgb(47, 51, 54);
+border-radius: 999px;
+}
+.tweet{
+    width: 20rem;
+    height: 40px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    font-weight: bold;
+}
+.myaccount img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.myaccount{
+    margin-right: 30px;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+
+}
+.myaccount:hover{
+    background-color: rgb(47, 51, 54);
+    border-radius: 999px;
+    
+}
+.myaccount i{
+    font-size: 3rem;
+}
+.myaccount p{
+color: rgb(110, 115, 125);
+}
+main{
+    margin-left: 30vw;
+    height: 100%;
+
+}
+main .main-content{
+    display: flex;
+    width: 100%;
+}
+main .main-content .content{
+    width: 50%;
+    padding: 0 15px;
+    border-left:  1px solid rgb(47,51,54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+main .main-content .content .home-bar{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+ .img-style{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+}
+main .content .box-twitting .write-twite input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 90%;
+    outline: none;
+}
+main .content .box-twitting .write-twite {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.select-data{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-data .data{
+    padding-left: 7rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+.select-data .data a{
+    color:#1C88D2;
+}
+.select-data button{
+    width: 9rem;
+    font-size: 1.6rem;
+    height: 3rem;
+    border-radius: 999px;
+    color: white;
+    background-color:rgb(29, 155, 240) ;
+    border: none;
+    cursor: pointer;
+
+}
+
+.twitts{
+    border-top: 1px solid  rgb(47,51,54);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.twitts .twitts-details{
+    display: flex;
+    gap: 1rem;
+
+}
+.twitts .twitts-details .twitts-head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+.twitts-head i{
+    font-size: 2.5rem;
+}
+.twitts-head .account-name{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.account-name a{
+    color: white ;
+}
+.all-twitte-card a i{
+ color:rgb(110,113,125)
+}
+.twitts-head .account-name span{
+    color:rgb(110, 118, 125);
+}
+.all-twitte-card{
+    width: 100%;
+}
+
+.twitte-body p{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+
+}
+.twitte-media{
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.side-main{
+    width: 50%;
+    padding: 15px 19% 15px 2%;
+   
+}
+.side-main  input{
+    background-color: #212327;
+        outline: none;
+        font-size: 1.5rem;
+        border: none;
+        color: white;
+        width: 100%;
+        border: none;
+        border-radius: 9999px;
+        height: 5.5rem;
+        padding: 3rem;
+}    
+.search{
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+}
+
+.trending{
+    background-color: #212327;
+    padding: 15px;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+.trending p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #adadaddd;
+}
+.trending h2{
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+.trending .tweet-trend{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.side-main .country{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 2rem;
+}
+.tweet-trend:hover,.show-more:hover,.sugest-person:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+}
+.show-more{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #1C88D2;
+    padding: 15px;
+    margin-top: 2rem;
+    display: block;
+    border-radius: 2rem;
+}
+
+
+footer{
+    display: none;
+}
+.how-follow{
+    background-color: #212327;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    padding: 15px;
+   
+}
+.how-follow button{
+    color: black;
+    border-radius: 999px;
+    width: 8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 4rem;
+}
+.sugest-person{
+    margin-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.sugest-person .info{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.sugest-person .info  h5{
+    color: rgb(145, 145, 145);
+
+}
+
+@media (max-width:1166px) {
+   
+   main{
+    padding: 0;
+   }
+    header {
+        padding: 0px 0 30px 5%;
+    }
+    .side-main{
+        padding: 15px 15px 15px 1%;
+        }
+    .select-data .data{
+        gap:.5rem;
+        padding-left: 3rem;
+    }
+} 
+
+
+
+
+@media (max-width:760px){
+    header{
+        display: none;
+    }
+    main{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+     main .main-content .content{
+        width: 100%;
+    }
+    .side-main{
+        display:none
+    }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+            position: fixed;
+            bottom:0px;
+            width: 100vw;
+            background-color: black;
+            font-size: 2rem;
+            color:white;
+            cursor: pointer;
+        }
+}
